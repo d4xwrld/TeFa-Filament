@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <div class="w-full flex flex-col md:flex-row items-center justify-center my-12 pt-4">
+    <div class="w-full flex flex-col md:flex-row items-center justify-center my-10 py-24">
         <!-- Text Container -->
         <div class="w-full md:w-1/2 md:text-left p-4 md:p-12 text-container">
             <h1 class="mb-4 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl">
