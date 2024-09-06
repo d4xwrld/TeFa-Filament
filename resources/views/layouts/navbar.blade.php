@@ -1,5 +1,5 @@
-<nav
-    class="bg-gray-100 backdrop-filter backdrop-blur-sm bg-opacity-70 border border-gray-100 sticky top-0 shadow-lg z-10">
+<nav class="bg-gray-100 backdrop-filter backdrop-blur-sm bg-opacity-70 border border-gray-100 sticky top-0 shadow-lg z-10"
+    data-aos="fade-down" data-aos-duration="1000">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('images/logo.png') }}" class="h-8" alt="RPL NEKAT" />

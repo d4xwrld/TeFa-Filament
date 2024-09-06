@@ -13,7 +13,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
+    <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
     <!-- Scripts -->
     @vite(['resources/css/flowbite.min.css', 'resources/js/flowbite.min.js'])
     {{-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" /> --}}
@@ -23,9 +23,11 @@
 </head>
 
 <body>
-    <div class="w-full flex flex-col md:flex-row items-center justify-center my-10 py-24">
+    <div class="w-full flex flex-col md:flex-row items-center justify-center my-10 py-24" data-aos="fade-in"
+        data-aos-duration="1000">
         <!-- Text Container -->
-        <div class="w-full md:w-1/2 md:text-left p-4 md:p-12 text-container">
+        <div class="w-full md:w-1/2 md:text-left p-4 md:p-12 text-container" data-aos="fade-right"
+            data-aos-duration="1000">
             <h1 class="mb-4 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl">
                 <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">RPL</span>
                 Nekat
@@ -37,7 +39,8 @@
             </p>
         </div>
         <!-- Image Container -->
-        <div class="flex justify-center md:justify-end w-full md:w-1/2 h-full md:h-auto mt-6 md:mt-0">
+        <div class="flex justify-center md:justify-end w-full md:w-1/2 h-full md:h-auto mt-6 md:mt-0"
+            data-aos="fade-left" data-aos-duration="1000">
             <div class="relative">
                 <!-- Make sure the circle stays circular -->
                 <div class="absolute inset-0 bg-indigo-700 rounded-full -z-10 w-[100%] h-[100%] aspect-square">
@@ -50,7 +53,7 @@
     </div>
 
     <!-- Section for products with wave SVG -->
-    <section id="products">
+    <section id="products" data-aos="fade-up" data-aos-duration="1000">
         <div class="mt-24">
             <!-- Wave SVG -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 400">
@@ -64,7 +67,7 @@
                     <h2 class="text-4xl font-extrabold text-white text-center mb-8">Our Products</h2>
                     <div class="flex flex-col md:flex-row">
                         @foreach ($posts as $post)
-                            <div class="w-full md:w-1/2 ">
+                            <div class="w-full md:w-1/2" data-aos="fade-up" data-aos-duration="1000">
                                 <div
                                     class="max-w-sm h-full bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700 mb-4">
                                     <a href="#">
@@ -107,5 +110,9 @@
     </section>
 
 </body>
+<script src="{{ asset('js/aos.js') }}"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

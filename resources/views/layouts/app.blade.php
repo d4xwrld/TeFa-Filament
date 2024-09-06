@@ -13,7 +13,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
+    <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
     <!-- Scripts -->
     @vite(['resources/css/output.css', 'resources/js/app.js'])
 </head>
@@ -36,9 +36,6 @@
                 </form>
             </div>
             <div class="flex">
-                <div class="w-1/6 border-b border-gray-200">
-                    @include('layouts.sidebar')
-                </div>
                 <main class=flex-grow py-4">
                     @yield('content')
                 </main>
@@ -46,5 +43,9 @@
         </div>
     </div>
 </body>
+<script src="{{ asset('js/aos.js') }}"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
