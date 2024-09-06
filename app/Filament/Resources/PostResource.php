@@ -10,6 +10,7 @@ use Faker\Provider\ar_EG\Text;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\ImageUpload;
 use Filament\Forms\Components\Select;
@@ -38,8 +39,9 @@ class PostResource extends Resource
                     ->label('Title')
                     ->required()
                     ->placeholder('Masukkan Judul'),
-                MarkdownEditor::make('description')
+                Textarea::make('description')
                     ->label('Description')
+                    ->rows(5)
                     ->required()
                     ->placeholder('Masukkan Deskripsi'),
                 FileUpload::make('image_url') // Field di form Filament

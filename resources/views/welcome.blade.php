@@ -64,9 +64,9 @@
                     <h2 class="text-4xl font-extrabold text-white text-center mb-8">Our Products</h2>
                     <div class="flex flex-col md:flex-row">
                         @foreach ($posts as $post)
-                            <div class="w-full md:w-1/2">
+                            <div class="w-full md:w-1/2 ">
                                 <div
-                                    class="max-w-sm bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700 mb-4">
+                                    class="max-w-sm h-full bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700 mb-4">
                                     <a href="#">
                                         <img class="rounded-t-lg" src="{{ url('storage/' . $post->image_url) }}"
                                             alt="" />
@@ -76,7 +76,12 @@
                                             <h5
                                                 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                                 {{ $post->title }}
+                                                <span
+                                                    class="bg-purple-300 text-purple-100 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-pink-900 dark:text-pink-300">
+                                                    {{ $post->category->name }}
+                                                </span>
                                             </h5>
+
                                         </a>
                                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                                             {{ $post->description }}
