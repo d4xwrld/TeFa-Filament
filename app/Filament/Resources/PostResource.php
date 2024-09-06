@@ -57,6 +57,9 @@ class PostResource extends Resource
                     ->label('User')
                     ->default(Auth::user()->id)
                     ->hidden(), // Hide the field instead of disabling it
+                TextInput::make('slug')
+                    ->label('Slug')
+                    ->hidden(),
             ]);
     }
     
@@ -76,6 +79,7 @@ class PostResource extends Resource
                     ->disk('public')
                     // ->directory('images')
                     ->sortable(),
+                TextColumn::make('slug'),
                 TextColumn::make('category.name')
                     ->searchable()
                     ->sortable(),
