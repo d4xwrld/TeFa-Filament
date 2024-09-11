@@ -30,17 +30,17 @@
                         aria-current="page">Home</a>
                 </li>
                 <li>
-                    @isset($post)
+                    {{-- @isset($post)
                         <a href="{{ route('posts.show', ['slug' => $post->slug]) }}"
                             class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ Request::is('products') ? 'text-blue-700' : 'md:hover:text-blue-700' }} md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                             Products
                         </a>
-                    @else
-                        <a href="#products"
-                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                            Products
-                        </a>
-                    @endisset
+                    @else --}}
+                    <a href="{{ route('home') }}#products"
+                        class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Products
+                    </a>
+                    {{-- @endisset --}}
                 </li>
                 {{-- <li>
                     <a href="#"
