@@ -34,23 +34,26 @@
             </h1>
             <p class="text-lg font-normal text-black lg:text-xl line-clamp-3">
                 Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term
-                value
-                and drive economic growth.
+                value and drive economic growth.
             </p>
         </div>
         <!-- Image Container -->
         <div class="flex justify-center md:justify-end w-full md:w-1/2 h-full md:h-auto mt-6 md:mt-0"
             data-aos="fade-left" data-aos-duration="1000">
             <div class="relative">
-                <!-- Make sure the circle stays circular -->
+                <!-- Circle Background -->
                 <div class="absolute inset-0 bg-indigo-700 rounded-full -z-10 w-[100%] h-[100%] aspect-square">
                 </div>
-                <!-- Adjust image size to maintain correct proportions -->
-                <img class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover" src="{{ asset('images/logo.png') }}"
-                    alt="image description">
+                <!-- Adjust the image to exceed the circle -->
+                <div class="relative w-64 h-64 md:w-80 md:h-80 overflow-visible">
+                    <img class="absolute top-[-10%] left-[-10%] transform scale-110"
+                        src="{{ asset('images/logo.png') }}" alt="image description">
+                </div>
             </div>
         </div>
     </div>
+
+
 
     <!-- Section for products with wave SVG -->
     <section id="products" data-aos="fade-up" data-aos-duration="1000">

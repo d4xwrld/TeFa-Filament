@@ -1,7 +1,7 @@
-<nav class="bg-gray-100 backdrop-filter backdrop-blur-sm bg-opacity-70 border border-gray-100 sticky top-0 shadow-lg z-10"
+<nav class="bg-gray-100 backdrop-filter backdrop-blur-sm bg-opacity-70 border border-gray-100 sticky top-0 shadow-lg z-50"
     data-aos="fade-down" data-aos-duration="1000">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="{{ route('home') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('images/logo.png') }}" class="h-8" alt="RPL NEKAT" />
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">RPL NEKAT</span>
         </a>
@@ -42,14 +42,14 @@
                         </a>
                     @endisset
                 </li>
-                <li>
+                {{-- <li>
                     <a href="#"
                         class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
                 </li>
                 <li>
                     <a href="#"
                         class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                </li>
+                </li> --}}
             </ul>
         </div>
     </div>
