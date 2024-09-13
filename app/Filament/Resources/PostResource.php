@@ -30,7 +30,7 @@ class PostResource extends Resource
 {
     protected static ?string $model = Post::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-squares-plus';
     public static function form(Form $form): Form
     {
         return $form
@@ -62,7 +62,7 @@ class PostResource extends Resource
                     ->hidden(),
             ]);
     }
-    
+
 
     public static function table(Table $table): Table
     {

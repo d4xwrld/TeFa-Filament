@@ -15,7 +15,8 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
     <!-- Scripts -->
-    @vite(['resources/css/flowbite.min.css', 'resources/js/flowbite.min.js'])
+    <link rel="stylesheet" href="{{ asset('css/flowbite.min.css') }}">
+    <script src="{{ asset('js/flowbite.min.js') }}"></script>
     {{-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" /> --}}
 
     @include ('layouts.navbar')
@@ -29,12 +30,14 @@
         <div class="w-full md:w-1/2 md:text-left p-4 md:p-12 text-container" data-aos="fade-right"
             data-aos-duration="1000">
             <h1 class="mb-4 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">RPL</span>
-                Nekat
+                <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">TEFA</span>
+                RPL Nekat
             </h1>
             <p class="text-lg font-normal text-black lg:text-xl line-clamp-3">
-                Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term
-                value and drive economic growth.
+                Teaching Factory RPL SMKN1 Katapang
+                sarana produksi yang berada di sekolah yang dijalankan berdasarkan prosedur dan standar industri untuk
+                menghasilkan produk sesuai dengan kondisi nyata industri
+                Melayani jasa pembuatan berbagai produk industri perangkat lunak yang affordable dan berkualitas.
             </p>
         </div>
         <!-- Image Container -->

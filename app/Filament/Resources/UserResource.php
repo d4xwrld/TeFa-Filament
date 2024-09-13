@@ -20,7 +20,7 @@ class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-user';
 
     public static function form(Form $form): Form
     {
@@ -31,9 +31,9 @@ class UserResource extends Resource
                     ->required()
                     ->placeholder('Masukkan Nama'),
                 TextInput::make('email')
-                ->required(),
+                    ->required(),
                 Select::make('usertype')
-                    ->label('User Type')
+                    ->label('Role')
                     ->required()
                     ->options([
                         'admin' => 'Admin',
@@ -59,6 +59,7 @@ class UserResource extends Resource
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('usertype')
+                    ->label('Role')
                     ->searchable()
                     ->sortable(),
             ])
