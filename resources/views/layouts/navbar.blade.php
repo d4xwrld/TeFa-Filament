@@ -23,11 +23,24 @@
         </div>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
             <ul
-                class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                     <a href="{{ route('home') }}"
                         class="block py-2 px-3 md:p-0 rounded md:bg-transparent {{ request()->routeIs('home') ? 'text-blue-700 dark:text-blue-500' : 'text-gray-900 dark:text-white' }}"
                         aria-current="page">Home</a>
+                </li>
+                <li>
+                    {{-- @isset($post)
+                        <a href="{{ route('posts.show', ['slug' => $post->slug]) }}"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ Request::is('products') ? 'text-blue-700' : 'md:hover:text-blue-700' }} md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            Products
+                        </a>
+                    @else --}}
+                    <a href="{{ route('home') }}#products"
+                        class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                        Products
+                    </a>
+                    {{-- @endisset --}}
                 </li>
                 <li>
                     <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
@@ -42,21 +55,21 @@
                         class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                             <li>
-                                <a href="{{ route('home') }}#profile"
+                                <a href="#profile"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profil
                                     TeFa RPL</a>
                             </li>
                             <li>
-                                <a href="{{ route('home') }}#profile"
+                                <a href="#profile"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tujuan</a>
                             </li>
                             <li>
-                                <a href="{{ route('home') }}#profile"
+                                <a href="#"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Struktur
                                     Organisasi</a>
                             </li>
                             <li>
-                                <a href="{{ route('home') }}#profile"
+                                <a href="#profile"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Kurikulum
                                     & Pembelajaran TeFa</a>
                             </li>
@@ -65,19 +78,6 @@
                   <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Kurikulum dan Pembelajaran TeFa</a>
                 </div> --}}
                     </div>
-                </li>
-                <li>
-                    {{-- @isset($post)
-                        <a href="{{ route('posts.show', ['slug' => $post->slug]) }}"
-                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ Request::is('products') ? 'text-blue-700' : 'md:hover:text-blue-700' }} md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                            Products
-                        </a>
-                    @else --}}
-                    <a href="{{ route('home') }}#products"
-                        class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                        Products
-                    </a>
-                    {{-- @endisset --}}
                 </li>
                 <li>
                     <a href="#"
