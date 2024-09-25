@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="bumblebee">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div class="w-full flex flex-col md:flex-row items-center justify-center my-10 py-24" data-aos="fade-in"
+    <div class="w-full flex flex-col md:flex-row items-center justify-center my-14 py-24" data-aos="fade-in"
         data-aos-duration="1000">
         <!-- Text Container -->
         <div class="w-full md:w-1/2 md:text-left p-4 md:p-12 text-container" data-aos="fade-right"
@@ -34,10 +34,9 @@
                 RPL Nekat
             </h1>
             <p class="text-lg font-normal text-black lg:text-xl line-clamp-3">
-                Teaching Factory RPL SMKN1 Katapang
-                sarana produksi yang berada di sekolah yang dijalankan berdasarkan prosedur dan standar industri untuk
-                menghasilkan produk sesuai dengan kondisi nyata industri
-                Melayani jasa pembuatan berbagai produk industri perangkat lunak yang affordable dan berkualitas.
+                Sarana produksi yang berada di sekolah dan dijalankan berdasarkan prosedur dan memiliki standar industri
+                yang bertujuan menghasilkan produk sesuai dengan kondisi nyata industri. Melayani jasa pembuatan
+                berbagai produk industri perangkat lunak yang affordable dan berkualitas.
             </p>
         </div>
         <!-- Image Container -->

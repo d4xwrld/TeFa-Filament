@@ -30,7 +30,7 @@
         @if ($post->photos->isNotEmpty())
             <div id="indicators-carousel" class="relative w-full" data-carousel="static">
                 <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96" data-aos="fade-down"
+                <div class="relative md:h-screen h-56 overflow-hidden rounded-lg md:h-96" data-aos="fade-down"
                     data-aos-duration="1000">
                     <div class="carousel-inner">
                         @foreach ($post->photos as $index => $photo)
